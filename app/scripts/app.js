@@ -1,6 +1,9 @@
-(function(define){
+(function (define) {
   /*jshint unused: vars */
-  define(['angular','route', 'controllers/main', 'controllers/about']/*deps*/, function (angular,route, MainCtrl, AboutCtrl)/*invoke*/ {
+  define([
+    'angular',
+    'route'
+  ], function (angular, route)/*invoke*/ {
     'use strict';
 
     /**
@@ -12,8 +15,7 @@
      * Main module of the application.
      */
     return angular
-      .module('yeomanShowcaseApp', ['yeomanShowcaseApp.controllers.MainCtrl',
-        'yeomanShowcaseApp.controllers.AboutCtrl',
+      .module('yeomanShowcaseApp', [
         'ngCookies',
         'ngResource',
         'ngSanitize',
